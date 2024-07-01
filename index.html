@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling: The art of enjoying life</title>
+  </head>
+  <style>
+    body {
+      background-image: url(./src/travel.jpg);
+      background-size: cover;
+    }
+    .theme-button,
+    .travel-button {
+      display: block;
+      border: none;
+      margin: 0 auto;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: all 200ms ease-in-out;
+    }
+    .theme-button {
+      font-size: 13px;
+      background-color: black;
+      color: white;
+    }
+    .theme-button:hover,
+    .travel-button:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      font-size: 15px;
+    }
+
+    .travel-button {
+      color: black;
+      background: #5cb0f0;
+      margin-bottom: 15px;
+    }
+    .travel-button:hover {
+      border: solid 3px #5cb0f0;
+      background-color: white;
+    }
+    .container {
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 10px 30px;
+      margin: 10px auto;
+    }
+    h1,
+    h2,
+    footer,
+    p,
+    .travel-button,
+    .theme-button {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+    h2 {
+      margin: 0;
+      font-style: italic;
+    }
+    p {
+      text-align: justify;
+    }
+    .main-landscape,
+    .landscape,
+    .landscape-secondary {
+      display: block;
+      max-width: 100%;
+    }
+    .main-landscape {
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+
+    .main-landscape:hover {
+      transform: scale(107%);
+      filter: contrast(80%);
+    }
+    .landscape,
+    .landscape-secondary {
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .landscape-secondary:hover {
+      transform: scale(90%);
+    }
+    .landscape:hover {
+      transform: scale(1.2);
+    }
+    .grid,
+    .grid-2 {
+      display: grid;
+      gap: 15px;
+    }
+    .grid {
+      grid-template-columns: 2fr 1fr;
+    }
+    .grid img {
+      height: 250px;
+      width: 600px;
+    }
+    .grid-2 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .dark {
+      background-image: url(./src/traveldark.jpg);
+      background-size: cover;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .dark .container,
+    .dark footer,
+    .dark button {
+      background: rgba(128, 128, 128, 0.7);
+    }
+    .dark footer {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .dark a {
+      color: rgba(236, 236, 241, 0.8);
+    }
+    .dark button {
+      color: black;
+      border: 2px solid black;
+    }
+    .dark .travel-button:hover {
+      border: none;
+      background: rgba(128, 128, 128, 0.7);
+    }
+  </style>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Travelling 🗺️</h1>
+      <h2>The art of enjoying life</h2>
+
+      <a href="https://es.wikipedia.org/wiki/Per%C3%BA" target="_blank">
+        <img
+          src="https://www.state.gov/wp-content/uploads/2019/04/Peru-e1556104258870-1698x956.jpg"
+          alt="Peru"
+          class="main-landscape"
+      /></a>
+      <p>
+        Travel is the movement of people between distant geographical locations.
+        Travel can be done by foot, bicycle, automobile, train, boat, bus,
+        airplane, ship or other means, with or without luggage, and can be one
+        way or round trip. Travel can also include relatively short stays
+        between successive movements, as in the case of tourism. <br />
+        <br />
+        Learn more on
+        <a href="https://en.wikipedia.org/wiki/Travel" target="_blank"
+          >Wikipedia</a
+        >
+      </p>
+      <div class="grid">
+        <a href="https://es.wikipedia.org/wiki/Socotra" target="_blank"
+          ><img
+            src="https://inarquia.es/wp-content/uploads/images_paisajes-increibles-mundo-yemen-socotra-min.jpg"
+            alt="Socotra landscape"
+            class="landscape-secondary"
+        /></a>
+        <a href="https://es.wikipedia.org/wiki/Sud%C3%A1frica" target="_blank">
+          <img
+            src="https://www.turiscom.org/asset/thumbnail,992,558,center,center/media/turismo/images/2016/03/13/2016031320165160923.jpg"
+            alt="Africa landscape"
+            class="landscape-secondary"
+        /></a>
+      </div>
+      <div class="grid-2">
+        <a href="https://es.wikipedia.org/wiki/Cuba" target="_blank"
+          ><img
+            src="https://s7g10.scene7.com/is/image/barcelo/viajar-a-cuba?&&fmt=webp-alpha&qlt=75&wid=2000&fit=crop,1"
+            alt="Cuba"
+            class="landscape"
+        /></a>
+        <a href="https://es.wikipedia.org/wiki/Suiza" target="_blank"
+          ><img
+            src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/l9lacsef2jipwxlvgrkg"
+            alt="Suiza"
+            class="landscape"
+        /></a>
+        <a href="https://es.wikipedia.org/wiki/Egipto" target="_blank"
+          ><img
+            src="https://i0.wp.com/gaceta.facmed.unam.mx/wp-content/uploads/2020/06/egipto-principal.jpg?resize=680%2C453&ssl=1"
+            alt="Egipto"
+            class="landscape"
+        /></a>
+      </div>
+      <button class="travel-button">Start travelling</button>
+    </div>
+    <footer>
+      Coded with ❤️ using HTML, CSS, and JavaScript by
+      <a href="https://github.com/RaquelD-B">Raquel Díaz </a>
+    </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      function showMessage() {
+        alert(
+          "Send us an email to travellovers@travel.com and we'll be in touch 🛩️"
+        );
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      let travelButton = document.querySelector(".travel-button");
+      travelButton.addEventListener("click", showMessage);
+    </script>
+  </body>
+</html>
